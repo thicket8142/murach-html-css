@@ -4,10 +4,27 @@
     --dark: #931420;
 }
 
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* default styles */
 body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 100%;
+    margin: 1em auto;
+    width: 90%;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    padding: 0.5em 0;
 }
 
 h1 {
@@ -29,6 +46,7 @@ li {
 
 ul {
     line-height: 1.5;
+    margin-left: 2em;
 }
 
 a,
@@ -52,21 +70,25 @@ header {
 
     & img {
         float: left;
+        margin: 0.5em 0;
     }
 
     & h2 {
-        font-size: 225%;
         color: var(--light);
+        font-size: 225%;
+        padding: 0;
     }
 
     & h3 {
-        font-style: italic;
         color: var(--dark);
+        font-style: italic;
+        padding-bottom: 1em;
     }
 }
 
 main {
     clear: left;
+    padding-bottom: 0.5em;
 
     & p.indent {
         text-indent: 2em;
@@ -78,11 +100,11 @@ main {
 }
 
 /* the styles for the footer */
-footer p.copyright {
-    font-size: 80%;
-    text-align: right;
+footer {
+    padding-top: 0.5em;
 
-    &::before {
-        content: "\00A9";
+    & p {
+        font-size: 80%;
+        text-align: right;
     }
 }
