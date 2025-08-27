@@ -3,14 +3,28 @@
 	--accent-color: #800000;  /* could also be coded #800 */
 }
 
+/* reset selector */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 /* default styles */
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
+	width: 80%;
 }
 a:hover, a:focus{
 	font-style: italic;
 	color: var(--accent-color);
+}
+h1, h2, h3, p, ul {
+	padding: 0.5em 0;
+}
+ul {
+	margin-left: 2em;
 }
 h1 {
 	font-size: 150%;
