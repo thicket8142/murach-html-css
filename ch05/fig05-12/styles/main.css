@@ -12,10 +12,19 @@
 }
 
 /* default styles */
+html {
+    /* min-height: 100%; */
+    background-image: linear-gradient(to bottom, white 0%, var(--light) 200%);
+}
+
 body {
+    background-color: white;
+    border: 1px solid var(--dark);
+    border-radius: 20px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 100%;
     margin: 1em auto;
+    padding: 1em;
     width: 90%;
 }
 
@@ -67,8 +76,10 @@ a:focus {
 /* the styles for the header */
 header {
     text-align: center;
+    border-bottom: 2px solid var(--light);
 
     & img {
+        border-radius: 10px 0 0 0;
         float: left;
         margin: 0.5em 0;
     }
@@ -101,6 +112,7 @@ main {
 
 /* the styles for the footer */
 footer {
+    border-top: 2px solid var(--light);
     padding-top: 0.5em;
 
     & p {
