@@ -1,0 +1,13 @@
+main {
+	display: flex;
+	padding-top: 1em;
+}
+section {
+	flex-basis: 65%;
+}
+aside {
+	flex-basis: 35%;
+	background-color: lightblue;
+	border-radius: 1em;
+	padding: 1em;
+}
